@@ -8,7 +8,7 @@ C.client = (function () {
 
             C.log('Client: init');
 
-            if (!this.isTouch) {
+            if (false) {
 
                 this.width = 320;
                 this.height = 548;
@@ -42,10 +42,10 @@ C.client = (function () {
 
         update: function () {
 
-            if (this.isTouch) {
+            if (true) {//this.isTouch) {
 
-                this.width = window.innerWidth,
-                this.height = window.innerHeight;
+                this.width = 360;//window.innerWidth,
+                this.height = 640;//window.innerHeight;
                 if (C.currentView) {
                     C.currentView.updateBounds();
                     C.currentView.onDragEnd(0);
